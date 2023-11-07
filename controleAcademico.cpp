@@ -37,7 +37,7 @@ void addCadastro(struct Cadastro** list, const char* Aluno, const char* Curso, c
 
 void exibirCadastros(const struct Cadastro* list) {
     const struct Cadastro* current = list;
-    int count = 0; // Vari·vel para contar contatos
+    int count = 0; // Vari√°vel para contar contatos
 
     while (current != NULL) {
         printf("Nome do aluno: %s\n", current->Aluno);
@@ -72,7 +72,7 @@ void deleteCadastro(struct Cadastro** list, const char* CPF) {
         current = current->next;
     }
 
-    printf("Aluno n„o encontrado.\n");
+    printf("Aluno n√£o encontrado.\n");
 }
 
 void updateCadastro(struct Cadastro* list, const char* CPF, const char* newCurso) {
@@ -85,7 +85,7 @@ void updateCadastro(struct Cadastro* list, const char* CPF, const char* newCurso
         list = list->next;
     }
 
-    printf("Aluno n„o encontrado.\n");
+    printf("Aluno n√£o encontrado.\n");
 }
 
 int main() {
@@ -101,7 +101,7 @@ int main() {
     int segundos = 1;
 
     while (1) {
-        printf("Gerenciamento de Alunos da InstituiÁ„o @rroba:\n");
+        printf("Gerenciamento de Alunos da Instituicao @rroba:\n");
         printf("1. Cadastrar aluno\n");
         printf("2. Exibir lista de alunos\n");
         printf("3. Excluir aluno da base\n");
@@ -208,9 +208,9 @@ int main() {
             case 4:
             	system("cls");
             	printf("*ALTERAR CURSO/SERIE DO ALUNO*: \n\n");
-                printf(" CPF do aluno que receber· a atualizaÁ„o: ");
+                printf(" CPF do aluno que receber√° a atualiza√ß√£o: ");
                 scanf("%s", CPF);
-                printf(" Novo curso/sÈrie a ser matriculado: ");
+                printf(" Novo curso/s√©rie a ser matriculado: ");
                 scanf("%s", Curso);
                 updateCadastro(CadastroList, CPF, Curso);
                 system("cls");
@@ -229,7 +229,7 @@ int main() {
             	printf("Aguarde...");
             	sleep(segundos);
             	system("cls");
-                // Liberar a memÛria alocada antes de sair
+                // Liberar a mem√≥ria alocada antes de sair
                 while (CadastroList) {
                     struct Cadastro* temp = CadastroList;
                     CadastroList = CadastroList->next;
@@ -237,7 +237,7 @@ int main() {
                 }
                 exit(0);
             default:
-                printf("Escolha inv·lida. Tente novamente.\n");
+                printf("Escolha inv√°lida. Tente novamente.\n");
         }
     }
 
