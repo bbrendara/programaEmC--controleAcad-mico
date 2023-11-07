@@ -40,11 +40,11 @@ void exibirCadastros(const struct Cadastro* list) {
     int count = 0; // Variável para contar contatos
 
     while (current != NULL) {
-        printf("Nome do aluno: %s\n", current->Aluno);
+        printf("\n\nNome do aluno: %s\n", current->Aluno);
         printf("Curso: %s\n", current->Curso);
         printf("CPF do aluno: %s\n", current->CPF);
         printf("Matricula: %s\n", current->Matricula);
-        printf("Turno: %s\n", current->Turno);
+        printf("Turno: %s\n\n", current->Turno);
         current = current->next;
         count++;
     }
