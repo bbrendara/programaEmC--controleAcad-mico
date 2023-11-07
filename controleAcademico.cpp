@@ -210,7 +210,7 @@ int main() {
             	printf("*ALTERAR CURSO/SERIE DO ALUNO*: \n\n");
                 printf(" CPF do aluno que receber a atualizacao: ");
                 scanf("%s", CPF);
-                printf(" Novo curso/série a ser matriculado: ");
+                printf(" Novo curso/serie a ser matriculado: ");
                 scanf("%s", Curso);
                 updateCadastro(CadastroList, CPF, Curso);
                 system("cls");
