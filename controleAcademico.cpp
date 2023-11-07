@@ -208,7 +208,7 @@ int main() {
             case 4:
             	system("cls");
             	printf("*ALTERAR CURSO/SERIE DO ALUNO*: \n\n");
-                printf(" CPF do aluno que receberá a atualização: ");
+                printf(" CPF do aluno que receber a atualizacao: ");
                 scanf("%s", CPF);
                 printf(" Novo curso/série a ser matriculado: ");
                 scanf("%s", Curso);
